@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'LAB디지털';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/LAB디지털.woff')
+    format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'LAB디지털';
+  background-color: #9e9e9e;
+}
+
+h1 {
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.money {
+  width: 300px;
+}
+
+.lotto_reset {
+  font-family: 'LAB디지털';
+  background-color: black;
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+  width: 55px;
+  height: 30px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.lotto_start {
+  font-family: 'LAB디지털';
+  background-color: black;
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+  width: 55px;
+  height: 30px;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.invisible {
+  display: none;
+}
+
+.lotto {
+  padding: 0;
+  display: flex;
+  align-content: center;
+  margin-top: 0;
+}
+
+.lotto__list {
+  list-style: none;
+}
+
+.lotto__number_1 {
+  background-color: #ffee58;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.lotto__number_2 {
+  background-color: #ef5350;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.lotto__number_3 {
+  background-color: #42a5f5;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.lotto__number_4 {
+  background-color: #66bb6a;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.lotto__number_5 {
+  background-color: #7e57c2;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.lotto__number_6 {
+  background-color: #ffee58;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.lotto__number_7 {
+  background-color: #42a5f5;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 10px;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
