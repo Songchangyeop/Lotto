@@ -40,6 +40,7 @@ h1 {
   text-align: center;
   cursor: pointer;
   transition: all 1s ease-in;
+  padding: 0;
 }
 
 .lotto_start {
@@ -53,6 +54,7 @@ h1 {
   font-size: 18px;
   text-align: center;
   cursor: pointer;
+  padding: 0;
 }
 
 .invisible {
