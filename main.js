@@ -6,8 +6,9 @@ const lottolist = document.querySelector('.lotto');
 
 // Start 버튼 클릭 시
 startbtn.addEventListener('click', () => {
-  resetbtn.classList.remove('invisible');
   startbtn.classList.add('invisible');
+  resetbtn.classList.remove('invisible');
+  lottolist.classList.remove('invisible');
   paintlotto();
 });
 
@@ -20,19 +21,20 @@ function getrandom() {
 // 로또 번호 생성
 function paintlotto() {
   for (let i = 1; i < 8; i++) {
-    let li = document.createElement('li');
-    li.classList.add(`lotto__number_${i}`);
-    li.classList.add('lotto__list');
-    let num = getrandom();
-    li.innerText = num;
-    lottolist.appendChild(li);
+    let num_list = document.querySelector(`.lotto__number_${i}`);
+    num_list.innerText = getrandom();
   }
 }
 
 // Reset 버튼 클릭 시
 resetbtn.addEventListener('click', () => {
-  for (let i = 1; i < 8; i++) {
-    let numberli = document.querySelector(`.lotto__number_${i}`);
-    numberli.innerText = getrandom();
-  }
+  lottolist.classList.add('invisible');
+
+  setTimeout(() => {
+    lottolist.classList.remove('invisible');
+    for (let i = 1; i < 8; i++) {
+      let numberli = document.querySelector(`.lotto__number_${i}`);
+      numberli.innerText = getrandom();
+    }
+  }, 500);
 });
