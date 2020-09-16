@@ -14,7 +14,7 @@ startbtn.addEventListener('click', () => {
 
 // 랜덤한 값 리턴함수
 function getrandom() {
-  const number = Math.floor(Math.random() * 50 + 1);
+  const number = Math.floor(Math.random() * 49 + 1);
   return number;
 }
 
